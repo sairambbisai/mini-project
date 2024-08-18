@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;300;400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lobster',cursive ;
+  }
+.logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+body {
+    background: #eee;
+    width: 100%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid black;
+    color: #130f40;
+    cursor: pointer;
+    background: none;
+}
+.btn:hover{
+    background: orange;
+    color: #fff;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:rgb(241, 241, 122);
+    box-shadow: 0 5px 15px rgb(233, 192, 9);
+    z-index: 999;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #3c74a3
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #3c74a3;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+#donation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/types\ of\ food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 2000px;
+    min-height: 40vh;
+    z-index: 9;
+}
+#donation h1{
+    color: yellow;
+    font-size: 10vh;
+    letter-spacing: 2px;
+    margin-bottom: 800px;
+    margin: auto;
+    padding: 8% 10%;
+    max-width: 900px;
+    line-height: 1.3em;
+    text-align: center;
+    letter-spacing: .5rem
+
+}    
+#momm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/friiutsss.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 2000px;
+    height: 40vw;
+    width: 100vw;
+    z-index: 9;
+}
+#momm  h1 {
+    font-family:'Dancing Script', cursive;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20vh;
+}
+.products .product-slider{
+    padding: 1rem;
+}
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: .1rem solid rgba(0,0,0,.1);;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: .2s linear;
+}
+.products .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline: .1rem solid black;
+    border: 2px black;
+    background: rgb(230, 152, 152);
+}
+.products .product-slider .box img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+
+}
+.products .product-slider .box h3{
+    font-size: 2.5rem;
+    color: #130f40;
+
+}
+.products .product-slider .box .price{
+    font-size: 2rem;
+    color: #666;
+    padding: .5ren 0;
+}
+.products .product-slider .box .stars i{
+    font-size: 1.7rem;
+    color: #ff7800;
+    padding: .5rem 0;
+}
+#veggg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/vegetablesss.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 2000px;
+    height: 40vw;
+    width: 100vw;
+    z-index: 9;
+}
+#veggg h1{
+    font-family:'Dancing Script', cursive;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20vh;
+}
+#dairr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/dairyyyy.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 2000px;
+    height: 40vw;
+    width: 100vw;
+    z-index: 9;
+}
+#dairr h1{
+    font-family:'Dancing Script', cursive;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20vh;
+}

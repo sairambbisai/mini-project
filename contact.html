@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/fth logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/FOOD LOGO.jpg" class="logo" alt=""></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div> 
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="#contact">Contact</a></li>
+                <li><a href="fooddonateform.php">Get Involved</a></li>
+                <li><a href="profile.php">Profile</a></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <section class="contact-form" id="contact">
+        <h4 class="sectionHeader">contact us</h4>
+        <h1 class="heading">Get In Touch!</h1>
+     
+        
+        <div class="contactForm">
+            <form action="admin/feedback.php" method="post">
+             <h1 class="sub-heading">Need Support !</h1>
+             <p class="para para2">Contact us for a quote , help to join the them.</p>
+             <input type="text" class="input" placeholder="name" name="name">
+             <input type="text" class="input" placeholder="email" name="email">
+             <textarea class="input" cols="30" rows="5" placeholder="message..." name="message"></textarea>
+             <input type="submit" class="input submit" value="Send" name="send">
+            </form>
+    
+            <div class="map-container">
+                <div class="mapBg"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60806.69400121264!2d83.24199623129483!3d17.724915426499443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39436e83b9984b%3A0xc92b43778c8eaeac!2sSubhojanam%20free%20meal%20program!5e0!3m2!1sen!2sin!4v1715251539637!5m2!1sen!2sin"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contactMethod">
+            <div class="method">
+                <i id="fa" class="fa fa-location-dot"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Location</h1>
+                    <p class="para">Subhojanam free meal program</p>
+                </article>
+            </div>
+    
+            <div class="method">
+                <i id="fa" class="fa fa-envelope"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Email</h1>
+                    <p class="para">Email: FoodDonation123@gmail.com</p>
+                </article>
+            </div>
+    
+            <div class="method">
+                <i id="fa" class="fa fa-phone"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Phone</h1>
+                    <p class="para">(+00) 0000 000 000</p>
+                </article>
+            </div>
+        </div>
+       </section>
+    
+</body>
+</html>
